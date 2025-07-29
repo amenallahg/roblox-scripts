@@ -10,7 +10,7 @@ local plr = Players.LocalPlayer
 local placeId = 132352755769957
 local currentJobId = game.JobId
 
--- Join Patient team + cleanup
+-- Join Patient team
 ReplicatedStorage.Remote.TeamChange:InvokeServer(Teams.PATIENT, "Patient")
 ReplicatedStorage.Remote.AnalyticsEvent:FireServer("Funnel", "Title Screen", "Selected Team")
 ReplicatedStorage.Remote.GetSettings:InvokeServer()
