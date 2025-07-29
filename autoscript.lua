@@ -39,7 +39,7 @@ local hrp = char:WaitForChild("HumanoidRootPart")
 local tpPos = Vector3.new(-1.0, 517.5, 408.0)
 hrp.CFrame = CFrame.new(tpPos)
 
--- Function to teleport to a different server or rejoin current server if needed
+-- Server hop
 local function tryServerHop()
     local triedServers = {}
 
